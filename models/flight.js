@@ -19,7 +19,9 @@ const flightSchema = new Schema({
     },
     departs: {
         type: Date,
-        default: '12/13/1970'// Date created + 1 year
+        // default: '12/13/1970',
+        // Date created + 1 year
+        timestamps: true
     }
 });
 
