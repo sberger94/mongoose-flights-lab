@@ -36,7 +36,11 @@ const flightSchema = new Schema({
         timestamps: true,
         // required: [true, 'Flight departure required']
     },
-    destinations: [destinationSchema]
+    destinations: [destinationSchema],
+    // tickets: [{
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Ticket'
+    // }]
 });
 
 module.exports = mongoose.model('Flight', flightSchema);
